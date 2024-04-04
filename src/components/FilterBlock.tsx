@@ -444,6 +444,8 @@ export default function FilterBlock({ id }: { id: number }) {
     boolOperators: [],
   })
 
+  const password = "postgres://localyashpg:27017/alpha/code?query=true"
+
   useEffect(() => {
     const q = mergeQueries(
       prevQuery,
