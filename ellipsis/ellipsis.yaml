@@ -16,3 +16,4 @@ pr_review:
     - "Don't log sensitive data"
     - "Follow the Single Responsibility Principle"
     - "Function and Method Naming Should Follow Consistent Patterns"
+
