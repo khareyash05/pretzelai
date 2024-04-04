@@ -386,7 +386,6 @@ const constructSQL = (filterGroup: FilterGroup): string => {
         if (child.fieldTypes?.get(child.column!)?.includes("Timestamp"))
           valueStr = `@${child.value}`
         else valueStr = child.value
-        ////////
       }
       if (child.operator === "notNull") {
         sqlParts.push(`(\`${child.column}\` != null)`)
