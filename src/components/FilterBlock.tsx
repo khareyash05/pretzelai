@@ -373,7 +373,9 @@ const constructSQL = (filterGroup: FilterGroup): string => {
         operatorStr = "=="
       } else if (child.operator === "not equals") {
         operatorStr = "!="
-      } else if (child.operator.includes("contains")) {
+      }else if (child.operator === "not equals") {
+        operatorStr = "!="
+      }else if (child.operator.includes("contains")) {
         operatorStr = "| text.lower | text.contains"
         valueStr = valueStr.toLowerCase()
       } else if (child.operator.includes("startsWith")) {
