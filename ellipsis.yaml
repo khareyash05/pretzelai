@@ -9,7 +9,7 @@ build:
   commands: 
     - name: "build_project"
       description: "This command will build and catch any import errors and other such issues"
-      command: "npm build"
+      command: "npm run build"
 
 pr_review:
   confidence_threshold: 0.7
@@ -23,4 +23,3 @@ pr_review:
     - "Don't log sensitive data"
     - "Follow the Single Responsibility Principle"
     - "Function and Method Naming Should Follow Consistent Patterns"
-
