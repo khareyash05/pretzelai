@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 import Upload from "./components/Upload"
 import FilterBlock from "./components/FilterBlock"
 import Columns from "./components/Columns"
