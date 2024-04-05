@@ -4,6 +4,13 @@ about:
   - "This is a codebase for a code generation tool called Ellipsis. It can review GitHub pull requests, answer questions about code, and even generate bug fixes!"
   - "We're migrating away from using AWS CDK. Our infrastructure is no longer part of this repository."
 
+build:
+  file: "ellipsis.Dockerfile"
+  commands: 
+    - name: "build_project"
+      description: "This command will build and catch any import errors and other such issues"
+      command: "npm build"
+
 pr_review:
   confidence_threshold: 0.7
   rules:
