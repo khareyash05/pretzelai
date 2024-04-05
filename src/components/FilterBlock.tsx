@@ -261,7 +261,11 @@ const FilterGroup: React.FC<FilterGroupProps> = ({
   const handleFilterChange = (
     index: number,
     newFilter: Filter | FilterGroup
-  ) => 
+const handleFilterChange = (index: number, newFilter: Filter | FilterGroup) => {
+  const updatedChildren = [...filterGroup.children]
+  updatedChildren[index] = newFilter
+  onFilterGroupChange({ ...filterGroup, children: updatedChildren })
+}
     const updatedChildren = [...filterGroup.children]
     updatedChildren[index] = newFilter
     onFilterGroupChange({ ...filterGroup, children: updatedChildren })
