@@ -7,6 +7,9 @@ about:
 build:
   file: "ellipsis.Dockerfile"
   commands: 
+    - name: "install_dependencies"
+      description: "This command will install all the necessary dependencies and looks for any installation dependencies"
+      command: "npm install"
     - name: "build_project"
       description: "This command will build and catch any import errors and other such issues"
       command: "npm run build"
