@@ -1,8 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import "./index.css"
-import App from "./App"
-import posthog from "posthog-js"
 import { POSTHOG_PUBLIC_KEY, POSTHOG_URL } from "./lib/config"
 
 if (POSTHOG_PUBLIC_KEY && POSTHOG_URL) {
